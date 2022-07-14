@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" style="-fx-background-color: #D1D1D1;" xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbo.MenuController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="253.0" layoutX="321.0" layoutY="52.0" opacity="0.56"
+              stroke="BLACK" strokeType="INSIDE" width="231.0"/>
+   <PasswordField fx:id="teksPassword" layoutX="359.0" layoutY="192.0" promptText="Password"/>
+   <TextField fx:id="teksUsername" layoutX="359.0" layoutY="124.0" promptText="Username"/>
+   <Label layoutX="359.0" layoutY="107.0" text="Username"/>
+   <Label layoutX="359.0" layoutY="175.0" text="Password"/>
+   <Button layoutX="400.0" layoutY="240.0" mnemonicParsing="false" onAction="#switchToDB" prefHeight="30.0"
+           prefWidth="62.0" style="-fx-background-color: #334257;" text="Login" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Button>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#739dae" height="400.0" stroke="BLACK" strokeType="INSIDE"
+              strokeWidth="0.0" width="270.0"/>
+   <ImageView fitHeight="83.0" fitWidth="86.0" layoutX="94.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@vending-machine.png"/>
+   </ImageView>
+   <Label layoutX="61.0" layoutY="189.0" text="Vending Machine" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Bold" size="18.0"/>
+      </font>
+   </Label>
+   <Label layoutX="369.0" layoutY="58.0" text="Login untuk Admin">
+      <font>
+         <Font name="System Bold" size="14.0"/>
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="11.0" layoutY="217.0" prefHeight="23.0" prefWidth="249.0"
+          text="Get your drink from Our Vending Machine" textFill="#fffefe" wrapText="true">
+      <font>
+         <Font name="Segoe UI Bold" size="12.0"/>
+      </font>
+   </Label>
+   <Button layoutX="400.0" layoutY="335.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="30.0"
+           prefWidth="62.0" style="-fx-background-color: #334257;" text="Kembali" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Button>
+</Pane>
